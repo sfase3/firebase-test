@@ -11,6 +11,7 @@
     "nuxt": "3.0.0-rc.13"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
     "firebase": "^9.13.0"
   }
 }

@@ -1,4 +1,6 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import useFBase from "~~/composables/useFBase";
 export default defineNuxtPlugin(nuxtApp => {
 
     const config = useRuntimeConfig()
@@ -8,6 +10,6 @@ export default defineNuxtPlugin(nuxtApp => {
       };
 
       const app = initializeApp(firebaseConfig);
-
+      useFBase().initUser()
       console.log(app)
 })
