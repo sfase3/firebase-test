@@ -44,6 +44,7 @@ const createUser = async (email: string, password: string) => {
   const firebaseUser = useFirebaseUser();
   firebaseUser.value = auth.currentUser
     onAuthStateChanged(auth, (user) => {
+      console.log('change state')
         if (user) {
          
           const uid = user.uid;
